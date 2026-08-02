@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Parity Ledger — How League Economics Shape Competitive Balance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Chivo:wght@400;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> Sports Economics — 2010–2025 Season Window</div>
+    <h1 class="title">Money buys titles.<br>The question is <span class="accent">how much parity you're allowed to keep.</span></h1>
+    <p class="subtitle">American leagues cap spending and split national revenue evenly. Europe's top football leagues do neither. Sixteen seasons of champions, salary structures, and wage bills across nine leagues show exactly what that difference is worth.</p>
+
+    <div class="stat-strip">
+      <div class="stat-box">
+        <div class="stat-num us">10.5<span style="font-size:20px; color:var(--text-dim2);">/16</span></div>
+        <div class="stat-label">Avg. distinct champions per US league (NFL, NBA, MLB, NHL), 2010–2025</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num eu">4<span style="font-size:20px; color:var(--text-dim2);">/16</span></div>
+        <div class="stat-label">Avg. distinct champions per top-5 European football league, same window</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num us">1.0–1.6×</div>
+        <div class="stat-label">Payroll spread, highest to lowest spender — NFL / NHL / NBA</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num eu">5.6–12×</div>
+        <div class="stat-label">Wage-bill spread, highest to lowest spender — Europe's top 5 leagues</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- FINANCIAL MODELS -->
+<section id="models">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">01 — The Rules Each League Plays By</div>
+      <h2 class="section-title">Same sport, entirely different economics</h2>
+      <p class="section-desc">Every league in this analysis chases the same thing — a compelling season. But they're built on three different financial philosophies: hard caps with shared revenue, soft caps with tax penalties, and open markets with no cap at all.</p>
+    </div>
+
+    <div class="panel table-scroll">
+      <table class="fin-table">
+        <thead>
+          <tr>
+            <th>League</th>
+            <th>Cap model</th>
+            <th>2025–26 threshold(s)</th>
+            <th>Revenue sharing</th>
+            <th>Spend spread (top : bottom)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="league-name"><span class="region-mark us"></span>NFL</td>
+            <td><span class="cap-tag hard">Hard cap</span></td>
+            <td class="mono">$279.2M (2025) → $301.2M (2026), identical for all 32 teams</td>
+            <td>~90% of national media/sponsorship revenue split evenly; ~$400–450M/team from national deals alone</td>
+            <td class="mono">≈1.0×</td>
+          </tr>
+          <tr>
+            <td class="league-name"><span class="region-mark us"></span>NHL</td>
+            <td><span class="cap-tag hard">Hard cap</span></td>
+            <td class="mono">Ceiling $95.5M / Floor $70.6M</td>
+            <td>50/50 HRR split with players; supplemental revenue-sharing pool for low-revenue markets</td>
+            <td class="mono">≈1.35×</td>
+          </tr>
+          <tr>
+            <td class="league-name"><span class="region-mark us"></span>NBA</td>
+            <td><span class="cap-tag soft">Soft cap + tax</span></td>
+            <td class="mono">Cap $154.6M / Tax $187.9M / 1st apron $195.9M / 2nd apron $207.8M</td>
+            <td>Shared national media revenue + luxury tax redistributed to non-taxpaying teams</td>
+            <td class="mono">≈1.5–1.6×</td>
+          </tr>
+          <tr>
+            <td class="league-name"><span class="region-mark us"></span>MLB</td>
+            <td><span class="cap-tag soft">Luxury tax only</span></td>
+            <td class="mono">CBT line $241M (2025) / $244M (2026); no ceiling, escalating tax rates above it</td>
+            <td>Modest local revenue sharing to small markets; CBT proceeds fund benefits, not payroll equalization</td>
+            <td class="mono">4.4× ($323M Mets vs. $73M Athletics, 2025)</td>
+          </tr>
+          <tr>
+            <td class="league-name"><span class="region-mark eu"></span>Premier League</td>
+            <td><span class="cap-tag none">No cap</span></td>
+            <td class="mono">New Squad Cost Ratio (2026–27): squad spend ≤ 85% of football revenue — spending-relative-to-revenue, not a cap</td>
+            <td>Domestic TV revenue partly pooled; overseas rights and commercial income are not shared</td>
+            <td class="mono">5.6× (Man City £223.7M vs. Ipswich £40.0M, 2024–25)</td>
+          </tr>
+          <tr>
+            <td class="league-name"><span class="region-mark eu"></span>Serie A</td>
+            <td><span class="cap-tag none">No cap</span></td>
+            <td class="mono">No league-wide financial ceiling</td>
+            <td>Minimal — mostly club-level commercial and broadcast income</td>
+            <td class="mono">≈7× (Inter vs. Lecce, 2024–25)</td>
+          </tr>
+          <tr>
+            <td class="league-name"><span class="region-mark eu"></span>Bundesliga</td>
+            <td><span class="cap-tag none">No cap</span></td>
+            <td class="mono">50+1 ownership rule limits outside investment, but no spending cap</td>
+            <td>Minimal — mostly club-level commercial and broadcast income</td>
+            <td class="mono">≈10× (Bayern vs. Heidenheim, 2024–25)</td>
+          </tr>
+          <tr>
+            <td class="league-name"><span class="region-mark eu"></span>La Liga</td>
+            <td><span class="cap-tag none">No cap</span></td>
+            <td class="mono">Club-by-club spending limits set relative to each club's own revenue (not league-wide)</td>
+            <td>Minimal — mostly club-level commercial and broadcast income</td>
+            <td class="mono">≈12× (Real Madrid vs. Levante, 2024–25)</td>
+          </tr>
+          <tr>
+            <td class="league-name"><span class="region-mark eu"></span>Ligue 1</td>
+            <td><span class="cap-tag none">No cap</span></td>
+            <td class="mono">DNCG financial oversight body, no hard spending ceiling</td>
+            <td>Minimal — TV revenue collapsed after 2021 broadcast deal collapse, widening the gap to PSG</td>
+            <td class="mono">Wide — PSG's revenue dwarfs the rest of the league</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="source-note">Sources: NFL Football Operations, NBA.com/Hoops Rumors, Spotrac MLB Tax Tracker, NHL.com, Premier League/Sky Sports SCR rules, PlanetFootball wage-bill rankings, Sportingpedia European wage data.</p>
+  </div>
+</section>
+
+<!-- CHAMPIONSHIP DIVERSITY -->
+<section class="alt" id="diversity">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">02 — Who Actually Wins</div>
+      <h2 class="section-title">16 seasons, 16 champions? Only in America.</h2>
+      <p class="section-desc">Count the distinct champions each league produced from 2010 to 2025. The four capped US leagues cluster tightly around 10–11 different winners. Europe's top 5 football leagues top out at 5.</p>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Distinct champions, 2010–2025 (out of 16 seasons)</div>
+      <div class="panel-note">Higher = more different teams got to win it all.</div>
+      <div class="chart-holder">
+        <canvas id="diversityChart"></canvas>
+      </div>
+    </div>
+
+    <div class="legend-row">
+      <div class="legend-item"><span class="swatch us"></span> Capped US leagues (revenue-shared)</div>
+      <div class="legend-item"><span class="swatch eu"></span> European football leagues (open market)</div>
+    </div>
+  </div>
+</section>
+
+<!-- MOSAICS -->
+<section id="mosaics">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">03 — The Title Mosaic</div>
+      <h2 class="section-title">Every champion, every season, at a glance</h2>
+      <p class="section-desc">Each tile is one season's champion, 2010 (top-left) through 2025 (bottom-right). Same color = same team won again. Scan for repeats — Europe's boards turn into solid blocks of color; the US boards look like static.</p>
+    </div>
+    <div class="mosaic-grid" id="mosaicGrid"></div>
+  </div>
+</section>
+
+<!-- HHI CONCENTRATION -->
+<section class="alt" id="concentration">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">04 — Title Concentration</div>
+      <h2 class="section-title">The Herfindahl-Hirschman Index, applied to trophies</h2>
+      <p class="section-desc">Economists use HHI to measure market concentration — the same math that flags monopolies. Applied to championships (sum of each team's title-share, squared), a perfectly even 16-way split would score ~625. A single team winning every year scores 10,000.</p>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Championship HHI by league, 2010–2025</div>
+      <div class="panel-note">Lower = titles spread across more teams. Higher = one or two teams dominate.</div>
+      <div class="chart-holder">
+        <canvas id="hhiChart"></canvas>
+      </div>
+    </div>
+
+    <div class="callout">
+      <b>Bundesliga's HHI of 6,797</b> is almost entirely Bayern Munich: 13 titles in 16 years. Compare that to the NFL and NHL, both sitting at 1,172 — their most successful team over the same period won 3 titles, same as several others in the league.
+    </div>
+  </div>
+</section>
+
+<!-- MONEY VS PARITY -->
+<section id="scatter">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">05 — The Relationship</div>
+      <h2 class="section-title">Spending inequality tracks title concentration almost perfectly</h2>
+      <p class="section-desc">Plot each league's payroll/wage-bill spread (how many times more the top spender pays vs. the bottom spender) against its championship HHI. The capped leagues sit in a tight cluster, bottom-left. The open-market leagues climb steadily up and to the right.</p>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Spend spread vs. title concentration</div>
+      <div class="panel-note">X-axis: highest ÷ lowest team spend, log scale. Y-axis: championship HHI, 2010–2025.</div>
+      <div class="chart-holder">
+        <canvas id="scatterChart"></canvas>
+      </div>
+    </div>
+    <p class="source-note">Note: MLB has no spending ceiling but does have a soft luxury-tax line — its position (higher spread, moderate HHI so far) is the closest thing to a live test case for what happens when a capped-adjacent league's richest team stops caring about the tax. The Dodgers' back-to-back titles in 2024–25 are the first hint of where that goes.</p>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="alt" id="cases">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">06 — What Parity Looks Like Up Close</div>
+      <h2 class="section-title">Small markets, big trophies — and the exceptions that prove the rule</h2>
+      <p class="section-desc">Revenue sharing and hard caps don't just create more champions on paper — they let franchises in small media markets compete for sustained stretches without simply outspending the rest of the league.</p>
+    </div>
+
+    <div class="case-grid">
+      <div class="case-card">
+        <div class="case-tag">NFL · Small Market</div>
+        <div class="case-title">Kansas City & Buffalo</div>
+        <div class="case-body">Two of the NFL's smallest media markets have combined for 4 Super Bowl titles and 8 conference championship appearances since 2020 — spending the exact same salary cap dollar-for-dollar as the Giants or Cowboys.</div>
+      </div>
+      <div class="case-card">
+        <div class="case-tag">NBA · Small Market</div>
+        <div class="case-title">OKC, Denver, Milwaukee</div>
+        <div class="case-body">Three of the last five NBA champions (Thunder, Nuggets, Bucks) came from metro areas smaller than every top-5 European football club's home city. All built through the draft and cap-managed contracts, not outspending.</div>
+      </div>
+      <div class="case-card">
+        <div class="case-tag">MLB · Small Market</div>
+        <div class="case-title">Tampa Bay & Milwaukee</div>
+        <div class="case-body">The Rays have made the playoffs 7 times since 2010 on bottom-5 payrolls almost every year. Milwaukee has been a perennial contender on a mid-size-market budget — for now. MLB's lack of a hard cap is this list's asterisk.</div>
+      </div>
+      <div class="case-card eu-card">
+        <div class="case-tag eu">Premier League · The Anomaly</div>
+        <div class="case-title">Leicester City, 2016</div>
+        <div class="case-body">Priced at 5,000-to-1 by bookmakers, Leicester's title remains the single biggest upset in the dataset — and virtually the only one. It hasn't happened again since, and Leicester was relegated within 8 years.</div>
+      </div>
+      <div class="case-card eu-card">
+        <div class="case-tag eu">Premier League · The Wealth Effect</div>
+        <div class="case-title">Manchester City, 2012–2024</div>
+        <div class="case-body">8 titles in 13 seasons after a 2008 takeover backed by Abu Dhabi's Sheikh Mansour turned City from mid-table into the league's benchmark spender — with no cap in place to slow it down.</div>
+      </div>
+      <div class="case-card eu-card">
+        <div class="case-tag eu">Bundesliga · The Ceiling</div>
+        <div class="case-title">Bayern Munich, 2013–2025</div>
+        <div class="case-body">13 titles in 16 years, including a 10-year unbroken streak from 2013–2023. Bayern's revenue and wage bill run roughly 10x some of its rivals — there is no mechanism in German football to close that gap.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section id="method">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">07 — Methodology & Caveats</div>
+      <h2 class="section-title">How this was built</h2>
+    </div>
+    <div class="two-col">
+      <div class="panel">
+        <div class="panel-title">What's measured</div>
+        <p class="section-desc" style="margin-top:10px; font-size:15px;">
+        Champion (league title/Finals winner) recorded for each of 16 seasons, 2010–2025, for the NFL, NBA, MLB, NHL, and Europe's top 5 football leagues (Premier League, La Liga, Bundesliga, Serie A, Ligue 1). Distinct-champion counts and HHI are computed directly from that list. Spend-spread figures use the most recently available full-season payroll or wage-bill data per league (2024–25 or 2025–26), not a 16-year average — payroll history at that granularity isn't consistently published across all nine leagues.
+        </p>
+      </div>
+      <div class="panel">
+        <div class="panel-title">Where this simplifies</div>
+        <p class="section-desc" style="margin-top:10px; font-size:15px;">
+        HHI on league titles rewards leagues with more playoff rounds / randomness, not just financial structure — the NFL's single-elimination bracket adds variance a round-robin league wouldn't have. European "revenue sharing" also isn't zero — domestic TV deals are pooled to varying degrees — it's just far smaller and less equalizing than the NFL's near-total pooling. Treat this as directional evidence for the financial-structure hypothesis, not a controlled experiment.
+        </p>
+      </div>
+    </div>
+    <div class="callout warn">
+      <b>The MLB caveat:</b> Baseball has produced real parity for over a decade — Kansas City (2015), Tampa Bay's playoff run, Milwaukee's contention window — without a hard cap. The Dodgers' 2024–25 back-to-back titles, run on baseball's largest payroll two years running, is the exception the numbers haven't fully caught up to yet. If it continues, MLB's HHI starts drifting toward soccer's territory.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="fmark">THE PARITY LEDGER</div>
+      <p style="margin-top:10px;">Built for Phil. Champion data verified via league sources and current reporting as of August 2026. Financial figures reflect 2024–25 / 2025–26 season data where available.</p>
+    </div>
+    <p>NFL · NBA · MLB · NHL · Premier League · La Liga · Bundesliga · Serie A · Ligue 1</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="chart.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

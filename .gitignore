@@ -1,0 +1,24 @@
+# Dependencies (in case any tooling gets added later)
+node_modules/
+
+# Environment / secrets
+.env
+.env.local
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Claude Code local session settings
+.claude/settings.local.json
+
+# Design tool export — kept locally as reference, not part of the shipped site
+stitch-export/
+
+# Playwright verification artifacts, if any were left behind in the project
+test-results/
+playwright-report/
