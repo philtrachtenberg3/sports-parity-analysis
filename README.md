@@ -7,6 +7,8 @@ taxes, and revenue sharing shape who actually wins.
 
 **[Live site →](your-github-pages-url-here)** (not ready yet)
 
+![Relationship between titles and spend by league](Assets/relationship-titles-spend-by-league.png)
+
 ## What it covers
 
 Champions for all nine leagues across 16 seasons (2010–2025), each league's
