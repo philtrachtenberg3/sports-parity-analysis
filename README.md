@@ -43,8 +43,23 @@ An example would be airlines - in 2000, the HHI was 1,041, before United, Delta,
 
 The sports comparisons are different because sports operate differently from business markets, but from an economic parity perspective, it gives a good sense. The Bundesliga would be considered almost a pure monopoly, and the US leagues would be considered "moderately concentrated" at around 1,000 - 1,500.
 
+### The Different Financial Models
+#### NFL
+Is the NFL the most socialistic sport in the world? Strip out the stadium sponsorships and the TV deals with tech conglomerates, the actual product on the field is the most socialistic way to do sports.
+
+National revenue, coming from TV deals and merchandising/licensing, gets split evenly amongst the 32 teams. Local revenue, which includes ticket sales, concessions, and local sponsors goes to the team itself. But something like 60-70% of revenue is split amongst the teams. And there's a salary cap, meaning no team can spend more than another team, regardless of the "value" of that team.
+
+If this were America itself, proposing a 60-70% wealth re-distribution and saying that every company in an industry must spend the same? That would be PURE FULL ON SOCIALISM!!! Never mind that you would get actual competition in a market and the only way to survive would be to out-coach or out-play the other team. Not out-spend year after year. 
+
+America is so funny because it prides itself on pure, unfettered capitalism, but it's happiest with a hard cap on spend in order to preserve parity. It's almost like... those are decisions that can be made.
+
+If American sports were like America, you'd have the Cowboys with an offense led by Josh Allen, Gibbs and Robinson in the backfield, JSN and Justin Jefferson at receiver, Kittle at Tight End. And a defense led by Myles Garrett, Jalen Carter, Micah Parsons, and Pat Surtain. Maybe the Rams get some good players. But the top few teams play against each other every year, and the Bengals and Jaguars fight for scraps.
+
+https://www.acuitymag.com/business/how-the-nfl-created-the-perfect-economic-model
+https://www.investopedia.com/articles/personal-finance/062515/how-nfl-makes-money.asp
+
 ## Future Updates
-- Further define HHI
+<!-- - Further define HHI -->
 - Research the financial models further of each sport
 - Incorporate the fact that, for example, in baseball, they structure salaries creatively so as to pay as little as possible now but with massive payouts later. For now, the opening-day payroll makes sense.
 
