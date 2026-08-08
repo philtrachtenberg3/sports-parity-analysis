@@ -35,6 +35,14 @@ In the other leagues, there is almost total domination by a few teams - the high
 
 The obvious point of note here is that none of the European soccer leagues have salary caps - I know there are penalties for spending in certain ways, but it doesn't seem to deter teams at all.
 
+### HHI
+Claude AI came up with the idea for using the HHI as a measure for league parity. Normally it's used to measure monopoly power, but here it's used for championship parity. And it's a pretty quick calculation: in the case of the Bundesliga, Bayern has won 13 of the last 16 titles, Dortmund 2 and Leverkeusen 1. So the number is (13/16)^2 + (2/16)^2 + (1/16)^2 = 0.6797, times 10,000 = 6,797. That's a very high concentration, whereas the US leagues have a wider range of champions. There are other ways to do this calculation - by win percentage, for example. 
+
+In Economics, the formula is based on market share, where a score of 0 is perfect competition, everybody equally sized, and a score of 10,000 is one firm with 100% market share. In Econ, anything over 1,800 is considered "concentrated" (down from 2,500). 
+An example would be airlines - in 2000, the HHI was 1,041, before United, Delta, and American merged with smaller airlines. In 2020, the HHI was 2,041. Wireless communication is even worse, with an HHI of 3,111 in 2015 (very few companies with total control).
+
+The sports comparisons are different because sports operate differently from business markets, but from an economic parity perspective, it gives a good sense. The Bundesliga would be considered almost a pure monopoly, and the US leagues would be considered "moderately concentrated" at around 1,000 - 1,500.
+
 ## Future Updates
 - Further define HHI
 - Research the financial models further of each sport
