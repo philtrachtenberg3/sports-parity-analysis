@@ -63,6 +63,9 @@ The NBA operates a bit differently from the other leagues, and kind of in an int
 
 This is an interesting model which does lead to quite a bit of parity and not a ton of situations where top teams way overspend the bottom teams. In the NBA, too, I think you get the most parity in big market vs. small market teams, where this past season you had teams like Detroit, Cleveland, Orlando, Oklahoma City, San Antonio, Denver, and Minnesota joined by the likes of Boston, New York, Philadelphia, LA, and Houston. The NBA suffers more from tanking from the bottom teams than anything else. It does seem like a fully win-now team could just break the bank and suffer the consequences, but overall it seems to do a good job of keeping parity and rewarding good coaching and successful drafting. You do see superteams, but it does generally mean that they need to sacrifice on depth.
 
+https://www.sportico.com/feature/nba-salaries-explained-salary-cap-1234786618/
+Google AI answers
+
 ## Future Updates
 <!-- - Further define HHI -->
 - Research the financial models further of each sport
