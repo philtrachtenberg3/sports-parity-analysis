@@ -93,6 +93,7 @@ https://www.reddit.com/r/baseball/comments/1ilrprl/how_the_nba_and_nfls_salary_c
 - Incorporate the fact that, for example, in baseball, they structure salaries creatively so as to pay as little as possible now but with massive payouts later. For now, the opening-day payroll makes sense.
 - plot out record with payroll by sport to see correlation with winning (may be a different type of analysis)
 - "star power" analysis - how much does have a star player make a difference in results. In MLB, likely not as much. In NBA, a huge amount.
+- championship analysis - likelihood a non-1 seed will win the title
 
 ## Data & methodology
 
