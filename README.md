@@ -66,10 +66,33 @@ This is an interesting model which does lead to quite a bit of parity and not a 
 https://www.sportico.com/feature/nba-salaries-explained-salary-cap-1234786618/
 Google AI answers
 
+#### MLB
+Major League Baseball is the only major American sports league without a salary cap and salary floor. It also has by far the biggest disparity between highest and lowest payroll (though still not close to European soccer).
+
+In place of a salary cap, MLB uses a Competitive Balance Tax (CBT). Teams can spend as much as they want, but they are penalized at progressively increasing rates if they exceed a certain amount (something to do with the average value of all player contracts on their roster). Teams above the base limit for multiple years in a row also face an increasing luxury tax each year. And, exceeding the limit by massive amounts can result in a team's draft spot being dropped several spots.
+
+MLB also has a "market score" based on local population size, so team's from major markets actually don't receive revenue sharing money from CBT overages.
+
+Baseball has revenue sharing, where about 50% of local TV and ticket revenue is shared with the rest of the league.
+
+Interestingly, a salary cap/floor is being proposed in the MLB for 2027. 
+
+The MLB is notorious for what's called "Moneyball", where smaller market teams who couldn't outspend the NY's/Boston's/LA's would find undervalued players using advanced metrics. 
+
+But, in general, the largest market teams like the Dodgers, Yankees, and Red Sox tend to be among the best every year, and spending correlates pretty closely with on-field performance. The Dodgers have also been somewhat cute with the system, structuring massive contracts like Shohei Ohtani's to pay relatively little now, and giving humongous payments 10 years from now. You do have smaller market teams like Tampa Bay and Milwaukee at the tops of their divisions, but the Yankees, Red Sox, Dodgers, Astros (recently), and Braves are almost always at the top. While Cincinnati, Pittsburgh, Kansas City, and Colorado live towards the bottom. Kansas City in 2015 was the last of the "small market" teams to win the championship.
+
+Baseball does still have quite a few small market teams doing well, but year-after-year it will be almost impossible to take down the Dodgers.
+
+https://www.mlb.com/news/mlb-proposed-salary-cap-floor-system
+https://en.wikipedia.org/wiki/Major_League_Baseball_luxury_tax
+https://www.reddit.com/r/baseball/comments/1ilrprl/how_the_nba_and_nfls_salary_cap_salary_floor/
+
 ## Future Updates
 <!-- - Further define HHI -->
 - Research the financial models further of each sport
 - Incorporate the fact that, for example, in baseball, they structure salaries creatively so as to pay as little as possible now but with massive payouts later. For now, the opening-day payroll makes sense.
+- plot out record with payroll by sport to see correlation with winning (may be a different type of analysis)
+- "star power" analysis - how much does have a star player make a difference in results. In MLB, likely not as much. In NBA, a huge amount.
 
 ## Data & methodology
 
