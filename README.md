@@ -1,4 +1,4 @@
-# The Parity Ledger
+# League Parity Analysis
 
 A data analysis of competitive balance across major sports leagues — the NFL,
 NBA, MLB, and NHL versus Europe's top 5 football leagues (Premier League,
