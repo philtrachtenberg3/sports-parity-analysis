@@ -87,11 +87,19 @@ https://www.mlb.com/news/mlb-proposed-salary-cap-floor-system
 https://en.wikipedia.org/wiki/Major_League_Baseball_luxury_tax
 https://www.reddit.com/r/baseball/comments/1ilrprl/how_the_nba_and_nfls_salary_cap_salary_floor/
 
+#### NHL
+NHL is the one I know the least about, but seems to be about the fairest (in terms of top-to-bottom spend). And it makes sense since the last few champions have been Tampa Bay, Florida (Panthers), and Vegas. The NHL has a hard cap and a salary floor - this year (2026-2027), the salary cap is ~$104m and the floor is ~$77m. And then they have revenue sharing, where the top-earning teams "contribute" to the shared pot, and the bottom-earning teams are "takers". The players also share 50% of the hockey-related revenue with the owners. The teams which tend to win are at the top of league spending (Vegas, Toronto, Dallas, Florida, Washington, Colorado, Minnesota), but it's all within a cap/floor.
+
+Also, it almost seems like big/small market plays no role in hockey. NY, LA, Chicago seem no more likely to win than Buffalo, Winnipeg, Carolina.
+
+https://www.eliteprospects.com/page/nhl-salary-cap-explained
+https://rg.org/en-ca/guides/championship-guides/nhl-salary-cap-explained-canada-guide
+
 ## Future Updates
 <!-- - Further define HHI -->
 - Research the financial models further of each sport
 - Incorporate the fact that, for example, in baseball, they structure salaries creatively so as to pay as little as possible now but with massive payouts later. For now, the opening-day payroll makes sense.
-- plot out record with payroll by sport to see correlation with winning (may be a different type of analysis)
+- plot out record with payroll by sport to see correlation with winning (may be a different type of analysis). indicate big/small market
 - "star power" analysis - how much does have a star player make a difference in results. In MLB, likely not as much. In NBA, a huge amount.
 - championship analysis - likelihood a non-1 seed will win the title
 
