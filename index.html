@@ -133,13 +133,13 @@
   <div class="wrap">
     <div class="section-head">
       <div class="section-tag">02 — Who Actually Wins</div>
-      <h2 class="section-title">16 seasons, 16 champions? Only in America.</h2>
-      <p class="section-desc">Count the distinct champions each league produced from 2010 to 2025. The four capped US leagues cluster tightly around 10–11 different winners. Europe's top 5 football leagues top out at 5.</p>
+      <h2 class="section-title">US leagues have way more unique champions.</h2>
+      <p class="section-desc">The US leagues have each had 10-11 distinct champions in the last 16 seasons. Europe's leagues have had 5, 4, or 3 distinct champions in the same time period.</p>
     </div>
 
     <div class="panel">
       <div class="panel-title">Distinct champions, 2010–2025 (out of 16 seasons)</div>
-      <div class="panel-note">Higher = more different teams got to win it all.</div>
+      <div class="panel-note">Higher = more different teams won the championship.</div>
       <div class="chart-holder">
         <canvas id="diversityChart"></canvas>
       </div>
@@ -156,9 +156,9 @@
 <section id="mosaics">
   <div class="wrap">
     <div class="section-head">
-      <div class="section-tag">03 — The Title Mosaic</div>
-      <h2 class="section-title">Every champion, every season, at a glance</h2>
-      <p class="section-desc">Each tile is one season's champion, 2010 (top-left) through 2025 (bottom-right). Same color = same team won again. Scan for repeats — Europe's boards turn into solid blocks of color; the US boards look like static.</p>
+      <div class="section-tag">03 — The Title Winners</div>
+      <h2 class="section-title">Every champion, every season</h2>
+      <p class="section-desc">Each tile is one season's champion, 2010 (top-left) through 2025 (bottom-right). Same color = same team won again. US leagues have a ton of variety, while in the Bundesliga, Bayern has won 13 of the last 16, La Liga has Real/Barca winning 14 of the last 16, and Ligue 1 with PSG winning 11 of the last 16.</p>
     </div>
     <div class="mosaic-grid" id="mosaicGrid"></div>
   </div>
@@ -169,8 +169,8 @@
   <div class="wrap">
     <div class="section-head">
       <div class="section-tag">04 — Title Concentration</div>
-      <h2 class="section-title">The Herfindahl-Hirschman Index, applied to trophies</h2>
-      <p class="section-desc">Economists use HHI to measure market concentration — the same math that flags monopolies. Applied to championships (sum of each team's title-share, squared), a perfectly even 16-way split would score ~625. A single team winning every year scores 10,000.</p>
+      <h2 class="section-title">The Herfindahl-Hirschman Index applied to trophies</h2>
+      <p class="section-desc">Economists use HHI to measure market concentration - the same math that flags monopolies. Applied to championships (sum of each team's title-share, squared), a perfectly even 16-way split would score ~625. A single team winning every year scores 10,000.</p>
     </div>
 
     <div class="panel">
@@ -191,7 +191,7 @@
 <section id="scatter">
   <div class="wrap">
     <div class="section-head">
-      <div class="section-tag">05 — The Relationship</div>
+      <div class="section-tag">05 — Money vs. Titles</div>
       <h2 class="section-title">Spending inequality tracks title concentration almost perfectly</h2>
       <p class="section-desc">Plot each league's payroll/wage-bill spread (how many times more the top spender pays vs. the bottom spender) against its championship HHI. The capped leagues sit in a tight cluster, bottom-left. The open-market leagues climb steadily up and to the right.</p>
     </div>
@@ -211,9 +211,9 @@
 <section class="alt" id="cases">
   <div class="wrap">
     <div class="section-head">
-      <div class="section-tag">06 — What Parity Looks Like Up Close</div>
-      <h2 class="section-title">Small markets, big trophies — and the exceptions that prove the rule</h2>
-      <p class="section-desc">Revenue sharing and hard caps don't just create more champions on paper — they let franchises in small media markets compete for sustained stretches without simply outspending the rest of the league.</p>
+      <div class="section-tag">06 — What Parity Looks Like</div>
+      <h2 class="section-title">Small markets have much more success in the US leagues than Europe</h2>
+      <p class="section-desc">Revenue sharing and salary caps ensure equality between the smaller and bigger market teams in US sports. Whereas in Europe, the biggest spenders are almost always the ones who win.</p>
     </div>
 
     <div class="case-grid">
@@ -230,22 +230,22 @@
       <div class="case-card">
         <div class="case-tag">MLB · Small Market</div>
         <div class="case-title">Tampa Bay & Milwaukee</div>
-        <div class="case-body">The Rays have made the playoffs 7 times since 2010 on bottom-5 payrolls almost every year. Milwaukee has been a perennial contender on a mid-size-market budget — for now. MLB's lack of a hard cap is this list's asterisk.</div>
+        <div class="case-body">The Rays have made the playoffs 7 times since 2010 on bottom-5 payrolls almost every year. Milwaukee has been a perennial contender on a mid-size-market budget (for now). MLB's lack of a hard cap is now leading to bigger teams spending way more.</div>
       </div>
       <div class="case-card eu-card">
-        <div class="case-tag eu">Premier League · The Anomaly</div>
+        <div class="case-tag eu">Premier League · The Huge Underdog</div>
         <div class="case-title">Leicester City, 2016</div>
-        <div class="case-body">Priced at 5,000-to-1 by bookmakers, Leicester's title remains the single biggest upset in the dataset — and virtually the only one. It hasn't happened again since, and Leicester was relegated within 8 years.</div>
+        <div class="case-body">Priced at 5,000-to-1 by bookmakers, Leicester's title remains the single biggest upset in the dataset - and virtually the only one. It hasn't happened again since, and Leicester was relegated within 8 years.</div>
       </div>
       <div class="case-card eu-card">
         <div class="case-tag eu">Premier League · The Wealth Effect</div>
         <div class="case-title">Manchester City, 2012–2024</div>
-        <div class="case-body">8 titles in 13 seasons after a 2008 takeover backed by Abu Dhabi's Sheikh Mansour turned City from mid-table into the league's benchmark spender — with no cap in place to slow it down.</div>
+        <div class="case-body">8 titles in 13 seasons after a 2008 takeover backed by Abu Dhabi's Sheikh Mansour turned City from mid-table into the league's benchmark spender - with no cap in place to slow it down.</div>
       </div>
       <div class="case-card eu-card">
         <div class="case-tag eu">Bundesliga · The Ceiling</div>
         <div class="case-title">Bayern Munich, 2013–2025</div>
-        <div class="case-body">13 titles in 16 years, including a 10-year unbroken streak from 2013–2023. Bayern's revenue and wage bill run roughly 10x some of its rivals — there is no mechanism in German football to close that gap.</div>
+        <div class="case-body">13 titles in 16 years, including a 10-year unbroken streak from 2013–2023. Bayern's revenue and wage bill run roughly 10x some of its rivals. There is no mechanism in German football to close that gap.</div>
       </div>
     </div>
   </div>
