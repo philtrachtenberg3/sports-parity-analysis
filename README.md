@@ -117,5 +117,4 @@ explored with Google Stitch, hand-implemented into the existing CSS system.
 
 ## Running locally
 
-Just open `index.html` in a browser — no build step, no dependencies to
-install.
+Just open `index.html` in a browser
