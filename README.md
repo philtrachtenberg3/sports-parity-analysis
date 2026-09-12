@@ -95,6 +95,17 @@ Also, it almost seems like big/small market plays no role in hockey. NY, LA, Chi
 https://www.eliteprospects.com/page/nhl-salary-cap-explained
 https://rg.org/en-ca/guides/championship-guides/nhl-salary-cap-explained-canada-guide
 
+## European Soccer - Premier League
+So, turns out teams can't just spend what they want. It seems like some pretty major loopholes have been closed. Now there is something called the Squad Cost Ratio (SCR), which says a club can only spend 85% of its football-related revenue on squad-related costs (ex. coaches, players). And if a team plays in a European competition, that drops to 70% of revenue. 
+
+Revenue streams include ticket sales, broadcasting rights, commercial partnership and sponsorship deals, and net profit from player sales. And they do have a first-and-second-tier tax, kind of like the NBA. Spending between 85-115% of revenue means the team pays a fine which gets distributed to the teams which stayed within their means. And if a team spends more than 115% of revenue, the team actually gets a 6-point deduction in the league standings, which escalates by 1 point for every additional 6.5 GBP spent beyond that line.
+
+And, there is also a rule now that sponsorships must face an independent Fair Market Value assessment. So if an owner tries to do a fake sponsorship for 100M GBP, an independent auditor will check and if they value it for 20M GBP, the league assesses the revenue at 20M GBP.
+
+All of this makes sense why there's still a pretty big gap between top-and-bottom spend (5.6x), since the ManU's/Arsenal's/Liverpool's/Tottenham's/Chelsea's have built up brand loyalty over decades, and Man City got in with the money before the limits were imposed. Also why Newcastle can't just jump to the top of the table after being bought by a Saudi. And why there are mid-table teams like Aston Villa and Bournemouth which are doing well now. 
+
+And, there is league-wide revenue sharing with a pretty giant pot.
+
 ## Future Updates
 <!-- - Further define HHI -->
 - Research the financial models further of each sport
