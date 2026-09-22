@@ -137,11 +137,23 @@
     box-shadow:inset 0 0 0 1px rgba(8,15,20,0.55);
   }
   .tile:hover{transform:scale(1.08); z-index:2; filter:brightness(1.15);}
-  .tile .yr{position:absolute; bottom:1px; right:3px; font-size:7px; color:rgba(8,15,20,0.45);}
+  .tile .yr{position:absolute; bottom:1px; right:3px; font-size:7px; color:rgba(8,15,20,0.45); z-index:1;}
+  .tile .tile-logo{width:65%; height:65%; object-fit:contain; pointer-events:none;}
   .mosaic-foot{
     margin-top:14px; font-size:12px; color:var(--text-dim2); line-height:1.5;
     font-family:'JetBrains Mono'; text-transform:uppercase; letter-spacing:0.02em;
   }
+
+  /* MOSAIC TOOLTIP — replaces the native title tooltip on tile hover */
+  .mosaic-tooltip{
+    position:fixed; z-index:60; pointer-events:none;
+    background:var(--panel2); border:1px solid var(--stroke);
+    color:var(--text); font-family:'JetBrains Mono',monospace;
+    font-size:11.5px; letter-spacing:0.02em;
+    padding:6px 10px; white-space:nowrap;
+    opacity:0; transition:opacity .1s ease;
+  }
+  .mosaic-tooltip.visible{opacity:1;}
 
   /* TABLE */
   table.fin-table{width:100%; border-collapse:collapse; font-size:14px;}

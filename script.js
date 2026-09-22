@@ -137,6 +137,87 @@ function colorFor(map, name){
   return map.get(name);
 }
 
+// ESPN team logos: US leagues use ESPN's CDN slug convention. European clubs
+// use their Wikipedia crest SVG directly since ESPN doesn't host those.
+// https://a.espncdn.com/i/teamlogos/{league}/500/{slug}.png
+const teamLogos = {
+  nfl: {
+    Saints:'no', Packers:'gb', Giants:'nyg', Ravens:'bal', Seahawks:'sea',
+    Patriots:'ne', Broncos:'den', Eagles:'phi', Chiefs:'kc', Buccaneers:'tb', Rams:'lar'
+  },
+  nba: {
+    Lakers:'lal', Mavericks:'dal', Heat:'mia', Spurs:'sa', Warriors:'gs',
+    Cavaliers:'cle', Raptors:'tor', Bucks:'mil', Nuggets:'den', Celtics:'bos', Thunder:'okc'
+  },
+  mlb: {
+    Giants:'sf', Cardinals:'stl', 'Red Sox':'bos', Royals:'kc', Cubs:'chc',
+    Astros:'hou', Nationals:'wsh', Dodgers:'lad', Braves:'atl', Rangers:'tex'
+  },
+  nhl: {
+    Blackhawks:'chi', Bruins:'bos', Kings:'la', Penguins:'pit', Capitals:'wsh',
+    Blues:'stl', Lightning:'tb', Avalanche:'col', 'Golden Knights':'vgk', Panthers:'fla'
+  },
+  epl: {
+    Chelsea:'https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg',
+    'Man United':'https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg',
+    'Man City':'https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg',
+    Leicester:'https://upload.wikimedia.org/wikipedia/en/2/2d/Leicester_City_crest.svg',
+    Liverpool:'https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg'
+  },
+  bund: {
+    Bayern:'https://upload.wikimedia.org/wikipedia/commons/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg',
+    Dortmund:'https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg',
+    Leverkusen:'https://upload.wikimedia.org/wikipedia/en/5/59/Bayer_04_Leverkusen_logo.svg'
+  },
+  liga: {
+    Barcelona:'https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg',
+    'Real Madrid':'https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg',
+    Atletico:'https://upload.wikimedia.org/wikipedia/en/f/f9/Atletico_Madrid_Logo_2024.svg'
+  },
+  seriea: {
+    Inter:'https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg',
+    'AC Milan':'https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg',
+    Juventus:'https://upload.wikimedia.org/wikipedia/commons/e/ed/Juventus_FC_-_logo_black_%28Italy%2C_2020%29.svg',
+    Napoli:'https://upload.wikimedia.org/wikipedia/commons/4/4d/SSC_Napoli_2025_%28white_and_azure%29.svg'
+  },
+  ligue1: {
+    Marseille:'https://upload.wikimedia.org/wikipedia/commons/4/4f/Olympique_de_Marseille_2026_logo.svg',
+    Lille:'https://upload.wikimedia.org/wikipedia/en/3/3f/Lille_OSC_2018_logo.svg',
+    Montpellier:'https://upload.wikimedia.org/wikipedia/en/a/a8/Montpellier_HSC_logo.svg',
+    PSG:'https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg',
+    Monaco:'https://upload.wikimedia.org/wikipedia/en/c/cf/LogoASMonacoFC2021.svg'
+  }
+};
+
+function logoUrlFor(leagueId, team){
+  const slug = teamLogos[leagueId] && teamLogos[leagueId][team];
+  if(!slug) return null;
+  return slug.startsWith('http') ? slug : `https://a.espncdn.com/i/teamlogos/${leagueId}/500/${slug}.png`;
+}
+
+// Single shared custom tooltip, positioned per-tile on hover so it can
+// replace the plain browser title tooltip with something theme-matched.
+const mosaicTooltip = document.createElement('div');
+mosaicTooltip.className = 'mosaic-tooltip';
+document.body.appendChild(mosaicTooltip);
+
+function showMosaicTooltip(target, text){
+  mosaicTooltip.textContent = text;
+  mosaicTooltip.classList.add('visible');
+  const rect = target.getBoundingClientRect();
+  const tRect = mosaicTooltip.getBoundingClientRect();
+  let left = rect.left + rect.width / 2 - tRect.width / 2;
+  left = Math.max(6, Math.min(left, window.innerWidth - tRect.width - 6));
+  let top = rect.top - tRect.height - 8;
+  if(top < 6) top = rect.bottom + 8;
+  mosaicTooltip.style.left = `${left}px`;
+  mosaicTooltip.style.top = `${top}px`;
+}
+
+function hideMosaicTooltip(){
+  mosaicTooltip.classList.remove('visible');
+}
+
 renderSafely('title mosaics', 'mosaicGrid', () => {
   const mosaicGrid = document.getElementById('mosaicGrid');
   leagues.forEach(l=>{
@@ -157,8 +238,34 @@ renderSafely('title mosaics', 'mosaicGrid', () => {
       const tile = document.createElement('div');
       tile.className = 'tile';
       tile.style.background = c;
-      tile.title = `${year}: ${team}`;
-      tile.innerHTML = `${team.length>10? team.slice(0,3).toUpperCase() : team.split(' ').map(w=>w[0]).join('').toUpperCase()}<span class="yr">${String(year).slice(2)}</span>`;
+
+      const logoUrl = logoUrlFor(l.id, team);
+
+      const initials = document.createElement('span');
+      initials.className = 'tile-initials';
+      initials.textContent = team.length>10? team.slice(0,3).toUpperCase() : team.split(' ').map(w=>w[0]).join('').toUpperCase();
+      if(logoUrl) initials.style.display = 'none';
+      tile.appendChild(initials);
+
+      if(logoUrl){
+        const img = document.createElement('img');
+        img.className = 'tile-logo';
+        img.alt = '';
+        img.loading = 'lazy';
+        img.onerror = () => { img.remove(); initials.style.display = ''; };
+        img.src = logoUrl;
+        tile.appendChild(img);
+      }
+
+      const yr = document.createElement('span');
+      yr.className = 'yr';
+      yr.textContent = String(year).slice(2);
+      tile.appendChild(yr);
+
+      const tooltipText = `${year}: ${team}`;
+      tile.addEventListener('mouseenter', () => showMosaicTooltip(tile, tooltipText));
+      tile.addEventListener('mouseleave', hideMosaicTooltip);
+
       tilesEl.appendChild(tile);
     });
     const topTeam = [...colorMap.keys()].map(name=>({name,count:l.champs.filter(c=>c[1]===name).length})).sort((a,b)=>b.count-a.count)[0];
